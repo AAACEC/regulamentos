@@ -85,7 +85,13 @@
 %   USEFUL COMMANDS
 %----------------------------------------------------------------------------------------
 
-\newcommand{\url}[1]{\href{http://#1}{#1}}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks = true,
+	allcolors = [rgb]{0.05,0.1,0.67},
+}
+
+\renewcommand{\url}[1]{\href{http://#1}{#1}}
 \newcommand{\urls}[1]{\href{https://#1}{#1}}
 \newcommand{\email}[1]{\href{mailto:#1}{#1}}
 
@@ -97,5 +103,4 @@
 \usepackage{enumitem}
 \setlist{noitemsep} % Decrease space between list items
 
-\usepackage{hyperref}
 \usepackage{import}
